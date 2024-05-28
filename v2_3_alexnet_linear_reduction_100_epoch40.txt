@@ -1,0 +1,82 @@
+x_train shape: (34799, 32, 32, 3)
+y_train shape: (34799,)
+x_valid shape: (4410, 32, 32, 3)
+y_valid shape: (4410,)
+x_test shape: (12630, 32, 32, 3)
+y_test shape: (12630,)
+Number of unique classes: 43
+True
+----------------------------------------------------------------
+        Layer (type)               Output Shape         Param #
+================================================================
+            Conv2d-1           [64, 64, 55, 55]          23,296
+              ReLU-2           [64, 64, 55, 55]               0
+         MaxPool2d-3           [64, 64, 27, 27]               0
+            Conv2d-4          [64, 192, 27, 27]         307,392
+              ReLU-5          [64, 192, 27, 27]               0
+         MaxPool2d-6          [64, 192, 13, 13]               0
+            Conv2d-7          [64, 384, 13, 13]         663,936
+              ReLU-8          [64, 384, 13, 13]               0
+            Conv2d-9          [64, 256, 13, 13]         884,992
+             ReLU-10          [64, 256, 13, 13]               0
+           Conv2d-11          [64, 256, 13, 13]         590,080
+             ReLU-12          [64, 256, 13, 13]               0
+        MaxPool2d-13            [64, 256, 6, 6]               0
+AdaptiveAvgPool2d-14            [64, 256, 6, 6]               0
+           Linear-15                  [64, 100]         921,700
+             ReLU-16                  [64, 100]               0
+          Dropout-17                  [64, 100]               0
+           Linear-18                  [64, 100]          10,100
+             ReLU-19                  [64, 100]               0
+           Linear-20                   [64, 43]           4,343
+================================================================
+Total params: 3,405,839
+----------------------------------------------------------------
+Input size (MB): 36.75
+Forward/backward pass size (MB): 521.52
+Params size (MB): 12.99
+Estimated Total Size (MB): 571.26
+----------------------------------------------------------------
+Epoch [0/39] - Training Loss: 0.0548, Training Accuracy: 5.79%, Validation Loss: 0.0547, Validation Accuracy: 7.66% 
+Epoch [1/39] - Training Loss: 0.0406, Training Accuracy: 24.06%, Validation Loss: 0.0261, Validation Accuracy: 43.67%
+Epoch [2/39] - Training Loss: 0.0276, Training Accuracy: 42.03%, Validation Loss: 0.0208, Validation Accuracy: 60.36%
+Epoch [3/39] - Training Loss: 0.0240, Training Accuracy: 48.77%, Validation Loss: 0.0178, Validation Accuracy: 66.26%
+Epoch [4/39] - Training Loss: 0.0214, Training Accuracy: 54.18%, Validation Loss: 0.0150, Validation Accuracy: 73.85%
+Epoch [5/39] - Training Loss: 0.0196, Training Accuracy: 58.34%, Validation Loss: 0.0146, Validation Accuracy: 74.83%
+Epoch [6/39] - Training Loss: 0.0185, Training Accuracy: 61.22%, Validation Loss: 0.0137, Validation Accuracy: 74.20%
+Epoch [7/39] - Training Loss: 0.0174, Training Accuracy: 63.69%, Validation Loss: 0.0130, Validation Accuracy: 78.87%
+Epoch [8/39] - Training Loss: 0.0164, Training Accuracy: 66.32%, Validation Loss: 0.0116, Validation Accuracy: 79.52%
+Epoch [9/39] - Training Loss: 0.0159, Training Accuracy: 67.38%, Validation Loss: 0.0133, Validation Accuracy: 76.76%
+Epoch [10/39] - Training Loss: 0.0151, Training Accuracy: 69.01%, Validation Loss: 0.0110, Validation Accuracy: 81.09%
+Epoch [11/39] - Training Loss: 0.0148, Training Accuracy: 69.53%, Validation Loss: 0.0115, Validation Accuracy: 80.98%
+Epoch [12/39] - Training Loss: 0.0142, Training Accuracy: 70.75%, Validation Loss: 0.0101, Validation Accuracy: 82.43%
+Epoch [13/39] - Training Loss: 0.0136, Training Accuracy: 71.94%, Validation Loss: 0.0112, Validation Accuracy: 80.77%
+Epoch [14/39] - Training Loss: 0.0133, Training Accuracy: 72.69%, Validation Loss: 0.0103, Validation Accuracy: 80.84%
+Epoch [15/39] - Training Loss: 0.0131, Training Accuracy: 73.14%, Validation Loss: 0.0119, Validation Accuracy: 77.73%
+Epoch [16/39] - Training Loss: 0.0129, Training Accuracy: 73.78%, Validation Loss: 0.0117, Validation Accuracy: 78.53%
+Epoch [17/39] - Training Loss: 0.0123, Training Accuracy: 74.60%, Validation Loss: 0.0101, Validation Accuracy: 81.34%
+Epoch [18/39] - Training Loss: 0.0120, Training Accuracy: 75.43%, Validation Loss: 0.0117, Validation Accuracy: 81.56%
+Epoch [19/39] - Training Loss: 0.0120, Training Accuracy: 75.65%, Validation Loss: 0.0114, Validation Accuracy: 78.57%
+Epoch [20/39] - Training Loss: 0.0118, Training Accuracy: 76.17%, Validation Loss: 0.0104, Validation Accuracy: 81.29%
+Epoch [21/39] - Training Loss: 0.0115, Training Accuracy: 76.77%, Validation Loss: 0.0101, Validation Accuracy: 82.88%
+Epoch [22/39] - Training Loss: 0.0113, Training Accuracy: 77.37%, Validation Loss: 0.0122, Validation Accuracy: 78.07%
+Epoch [23/39] - Training Loss: 0.0110, Training Accuracy: 77.68%, Validation Loss: 0.0120, Validation Accuracy: 75.51%
+Epoch [24/39] - Training Loss: 0.0107, Training Accuracy: 78.29%, Validation Loss: 0.0094, Validation Accuracy: 82.68%
+Epoch [25/39] - Training Loss: 0.0105, Training Accuracy: 78.73%, Validation Loss: 0.0127, Validation Accuracy: 77.76%
+Epoch [26/39] - Training Loss: 0.0101, Training Accuracy: 79.46%, Validation Loss: 0.0115, Validation Accuracy: 79.41%
+Epoch [27/39] - Training Loss: 0.0102, Training Accuracy: 79.25%, Validation Loss: 0.0130, Validation Accuracy: 74.42%
+Epoch [28/39] - Training Loss: 0.0098, Training Accuracy: 80.40%, Validation Loss: 0.0115, Validation Accuracy: 77.19%
+Epoch [29/39] - Training Loss: 0.0096, Training Accuracy: 80.67%, Validation Loss: 0.0137, Validation Accuracy: 73.36%
+Epoch [30/39] - Training Loss: 0.0096, Training Accuracy: 80.63%, Validation Loss: 0.0110, Validation Accuracy: 79.93%
+Epoch [31/39] - Training Loss: 0.0092, Training Accuracy: 81.42%, Validation Loss: 0.0105, Validation Accuracy: 82.06%
+Epoch [32/39] - Training Loss: 0.0089, Training Accuracy: 82.07%, Validation Loss: 0.0112, Validation Accuracy: 80.07%
+Epoch [33/39] - Training Loss: 0.0089, Training Accuracy: 82.08%, Validation Loss: 0.0106, Validation Accuracy: 81.04%
+Epoch [34/39] - Training Loss: 0.0090, Training Accuracy: 82.07%, Validation Loss: 0.0111, Validation Accuracy: 80.59%
+Epoch [35/39] - Training Loss: 0.0089, Training Accuracy: 82.24%, Validation Loss: 0.0108, Validation Accuracy: 79.95%
+Epoch [36/39] - Training Loss: 0.0088, Training Accuracy: 82.08%, Validation Loss: 0.0097, Validation Accuracy: 84.74%
+Epoch [37/39] - Training Loss: 0.0086, Training Accuracy: 82.77%, Validation Loss: 0.0114, Validation Accuracy: 80.07%
+Epoch [38/39] - Training Loss: 0.0085, Training Accuracy: 83.06%, Validation Loss: 0.0105, Validation Accuracy: 81.27%
+Epoch [39/39] - Training Loss: 0.0084, Training Accuracy: 83.19%, Validation Loss: 0.0117, Validation Accuracy: 81.54%
+Single image inference time: 0.000026 seconds
+Test loss: 0.0108639780777084
+Test accuracy: 81.96357878068092
